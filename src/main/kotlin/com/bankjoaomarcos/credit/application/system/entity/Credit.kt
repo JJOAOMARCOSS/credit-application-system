@@ -7,7 +7,7 @@ import java.time.LocalDate
 import java.util.UUID
 
 @Entity
-@Table(name = "credit") // letras minúsculas por padrão no PostgreSQL
+//@Table(name = "Credito") // letras minúsculas por padrão no PostgreSQL
 data class Credit (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
