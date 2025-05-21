@@ -31,5 +31,5 @@ data class Credit (
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id")
-    val customer: Customer
+    var customer: Customer? = null
 )

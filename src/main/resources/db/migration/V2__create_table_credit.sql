@@ -9,6 +9,6 @@ CREATE TABLE credit (
     CONSTRAINT pk_credit PRIMARY KEY (id)
 );
 
-ALTER TABLE credit ADD CONSTRAINT uc_credit_creditcode UNIQUE (credit_code);
+ALTER TABLE credit ADD CONSTRAINT uc_credit_creditCode UNIQUE (credit_code);
 
 ALTER TABLE credit ADD CONSTRAINT FX_CREDIT_ON_CUSTOMER FOREIGN KEY (customer_id) REFERENCES customer (id);
